@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" name="inputarea">
+                </div>
+                <div class="buttons">
+                   <input type="button" value="AC" onclick="inputarea.value=''">
+                   <input type="button" value="DEL" onclick="inputarea.value=inputarea.value.toString().slice(0,-1)">
+                   <input type="button" value="." onclick="inputarea.value+='.'">
+                   <input type="button" value="/" onclick="inputarea.value+='/'">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="7" onclick="inputarea.value+='7'">
+                    <input type="button" value="8" onclick="inputarea.value+='8'">
+                    <input type="button" value="9" onclick="inputarea.value+='9'">
+                    <input type="button" value="*" onclick="inputarea.value+='*'">
+                 </div>
+                 <div class="buttons">
+                    <input type="button" value="4" onclick="inputarea.value+='4'">
+                    <input type="button" value="5" onclick="inputarea.value+='5'">
+                    <input type="button" value="6" onclick="inputarea.value+='6'">
+                    <input type="button" value="-" onclick="inputarea.value+='-'">
+                 </div>
+                 <div class="buttons">
+                    <input type="button" value="1" onclick="inputarea.value+='1'">
+                    <input type="button" value="2" onclick="inputarea.value+='2'">
+                    <input type="button" value="3" onclick="inputarea.value+='3'">
+                    <input type="button" value="+" onclick="inputarea.value+='+'">
+                 </div>
+                 <div class="buttons">
+                    <input type="button" value="00" onclick="inputarea.value+='00'">
+                    <input type="button" value="0" onclick="inputarea.value+='0'">
+                    <input type="button" value="="  class="equal" onclick="inputarea.value=eval(inputarea.value)" >
+                    
+                 </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
